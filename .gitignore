@@ -1,0 +1,108 @@
+# =====================
+# Sistema operativo
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Python
+# =====================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+
+# =====================
+# Ambienti virtuali
+# =====================
+env/
+venv/
+ENV/
+.venv/
+.conda/
+*.conda
+*.tar.bz2
+
+# =====================
+# Jupyter Notebook
+# =====================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# =====================
+# File temporanei/editor
+# =====================
+*.swp
+*.bak
+*.tmp
+*.old
+*.orig
+*.log
+
+# =====================
+# Simulazioni MD e dinamiche molecolari
+# =====================
+# GROMACS
+*.xtc
+*.trr
+*.edr
+*.tpr
+*.mdp
+*.gro
+*.top
+
+# AMBER
+*.prmtop
+*.inpcrd
+*.rst7
+*.mdcrd
+*.nc
+*.out
+
+# CHARMM/NAMD
+*.psf
+*.dcd
+
+# Desmond / Schrödinger
+*.cms
+*.mae
+*.trj
+*.dat
+*.eaf
+
+# =====================
+# Dati pesanti e output
+# =====================
+*.pdb
+*.mol2
+*.sdf
+*.xyz
+*.map
+*.dx
+*.cube
+*.mrc
+*.csv
+*.tsv
+
+# Mantieni i dati piccoli manualmente con ! se necessario
+# !input/example.pdb
+
+# =====================
+# Cartelle locali
+# =====================
+results/
+data/
+output/
+tmp/
+cache/
+
+# =====================
+# Backup
+# =====================
+*~
+*.bak
+*.backup
