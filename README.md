@@ -40,6 +40,15 @@ source $env/bin/activate  # Linux/Mac
 # Install dependencies
 pip install -r requirements.txt
 
+# Create virtual environment with venv
+env="mdsim-env"
+python3 -m venv $env
+source $env/bin/activate  # Linux/Mac
+# .\$env\Scripts\activate  # Windows
+
+# Install dependencies
+pip install -r requirements.txt
+```
 🚀 Usage
 
 Start Jupyter Notebook:
