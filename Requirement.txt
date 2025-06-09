@@ -1,0 +1,7 @@
+MDAnalysis==2.9.0          # Core library for molecular dynamics analysis
+mdtraj==1.10.3             # For trajectory manipulation and analysis
+numpy==1.26.4              # Required by MDAnalysis and mdtraj
+matplotlib==3.8.4          # Plotting library
+ipywidgets==8.1.2          # Interactive widgets for Jupyter
+tqdm==4.66.2               # Progress bar utility
+ipython==8.24.0            # Required for interactive environments
