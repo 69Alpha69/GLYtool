@@ -4,7 +4,7 @@ This notebook provides an interactive workflow for the analysis of free-state mo
 
 ## 📂 Repository Structure
 
-- `MD_SIM_Analysis.ipynb`  
+- `FreeSimGlY.ipynb`  
   Main notebook for data import, format conversion, RMSD analysis, and glycosidic angle sampling.
 - `trajectory.xtc` (generated)  
   Trajectory file obtained from the conversion of a multimodel PDB file.
