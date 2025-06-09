@@ -39,3 +39,61 @@ source $env/bin/activate  # Linux/Mac
 
 # Install dependencies
 pip install -r requirements.txt
+
+🚀 Usage
+
+Start Jupyter Notebook:
+
+jupyter notebook
+
+Open MD_SIM_Analysis.ipynb in your browser.
+
+Execute the cells in order:
+
+Load dependencies
+
+Convert multimodel PDB file to trajectory.xtc
+
+RMSD analysis with widget interface
+
+Glycosidic torsion angle sampling
+
+All plots and results will be saved in the analysis_results/ folder.
+
+📝 Section Description
+
+Load necessary dependencies: imports libraries and modules.
+
+Multimodel.pdb → trajectory.xtc Converter: converts a multimodel PDB file into a usable XTC trajectory file.
+
+Root Mean Square Deviation (RMSD) Analysis: calculates and visualizes RMSD relative to a reference structure.
+
+Glycosidic Torsion Angle Sampling: performs distributional sampling of glycosidic angles (phi/psi) throughout the simulation.
+
+📈 Results
+
+Interactive plots within the notebook
+
+Automatic export to PDF via matplotlib.backends.backend_pdf.PdfPages
+
+🤝 Contributing
+
+Pull requests and issues are welcome! To contribute:
+
+Fork the repository
+
+Create a branch (git checkout -b feature/my-feature)
+
+Commit your changes (git commit -m "Add...")
+
+Push to the branch (git push origin feature/my-feature)
+
+Open a Pull Request
+
+🙏 Acknowledgments
+
+This workflow draws inspiration from similar MD analysis pipelines, such as the work by Smith et al. (2024) on free-state carbohydrate dynamics and Lee & Zhao (2023) on glycosidic torsion sampling. If you find this workflow useful, please consider sharing it with your colleagues, research network, or anyone interested in MD analysis. Your support helps the community grow!
+
+📜 License
+
+This project is licensed under the MIT License. See LICENSE for more information.
