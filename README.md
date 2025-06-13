@@ -1,15 +1,15 @@
-# MD Simulation Free-State Analysis
-
+# GLYtool (beta version)
+Project created to provide valuable rapid analysis tools in the field of glycoscience. The project consists of several Jupiter Notebook. This allows the analyses to be reproduced, executed on any operating system and made simple for all users, even those with less experience. The project is currently under development, so please be kind and notify me of any errors :)
 This notebook provides an interactive workflow for the analysis of free-state molecular dynamics (MD) simulations, focusing on the calculation of Root Mean Square Deviation (RMSD) and sampling of glycosidic torsion angles.
 
 ## 📂 Repository Structure
 
-- `FreeSimGlY.ipynb`  
-  Main notebook for data import, format conversion, RMSD analysis, and glycosidic angle sampling.
-- `trajectory.xtc` (generated)  
-  Trajectory file obtained from the conversion of a multimodel PDB file.
-- `analysis_results/` (generated)  
-  Folder containing the analysis results (plots, PDFs, raw data, etc.).
+- `FreeSimGLY.ipynb`  
+  Main notebook for free-state molecular dynamic simulations, composed by format conversion, RMSD and RMSF analysis, glycosidic angle sampling and clusterization of poses obtained.
+- `BoundSimGLY.ipynb`
+  Coming soon
+- `Requirements.txt`
+  File to easy-to-install requirement dependencies.
 
 ## 🛠️ Requirements
 
@@ -28,11 +28,11 @@ It is recommended to create a virtual environment (venv or conda) to isolate dep
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/MD-SIM-Analysis.git
-cd MD-SIM-Analysis
+git clone https://github.com/YOUR_USERNAME/GLYtool-Beta.git
+cd GLYtool-Beta
 
 # Create virtual environment with venv
-env="mdsim-env"
+env="GLYtool-env"
 python3 -m venv $env
 source $env/bin/activate  # Linux/Mac
 # .\$env\Scripts\activate  # Windows
@@ -55,7 +55,7 @@ pip install -r requirements.txt
 
     ```jupyter notebook```
 
--  Open `MD_SIM_Analysis.ipynb` in your browser.
+-  Open `FreeSimGLY.ipynb` in your browser.
 
 -  Execute the cells in order:
 
@@ -66,24 +66,27 @@ pip install -r requirements.txt
   3.  RMSD analysis with widget interface
 
   4. Glycosidic torsion angle sampling
+     
+  5. Pose Clusterization 
 
--  All plots and results will be saved in the analysis_results/ folder.
 
 ##  📝 Section Description
 
--  Load necessary dependencies: imports libraries and modules.
-
 -  Multimodel.pdb → trajectory.xtc Converter: converts a multimodel PDB file into a usable XTC trajectory file.
 
--  Root Mean Square Deviation (RMSD) Analysis: calculates and visualizes RMSD relative to a reference structure.
+-  Root Mean Square Deviation (RMSD) and Root Mean Square Fluctuation (RMSF) Analysis: calculates and visualizes RMSD and RMSF relative to a reference structure.
 
 -  Glycosidic Torsion Angle Sampling: performs distributional sampling of glycosidic angles (phi/psi) throughout the simulation.
+
+-  Clustering of dynamics: This allows you to select the number of representative poses to be extrapolated, after which a clustering report is returned, representing each pose    and sampled frame.
 
 ##  📈 Results
 
 Interactive plots within the notebook
 
 Automatic export to PNG, SVG, PDF via matplotlib
+
+You can then download the generated clustering PDB files to a dedicated folder
 
 ##  🤝 Contributing
 
@@ -102,7 +105,3 @@ Pull requests and issues are welcome! To contribute:
 🙏 Acknowledgments
 
 This workflow draws inspiration from similar MD analysis pipelines. If you find this workflow useful, please consider sharing it with your colleagues, research network, or anyone interested in glycochemistry MD analysis. Your support helps the community grow!
-
-📜 License
-
-This project is licensed under the MIT License. See LICENSE for more information.
